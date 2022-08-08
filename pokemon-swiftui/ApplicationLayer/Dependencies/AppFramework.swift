@@ -35,6 +35,7 @@ private class RepositoriesPart: DIPart {
 
 private class ServicesPart: DIPart {
     static let parts: [DIPart.Type] = [
+        PokemonServicePart.self
     ]
 
     static func load(container: DIContainer) {

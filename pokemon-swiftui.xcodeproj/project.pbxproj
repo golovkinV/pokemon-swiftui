@@ -17,6 +17,7 @@
 		E7E0C93828A0BB2F004607D0 /* DependenciesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0C93728A0BB2F004607D0 /* DependenciesConfiguration.swift */; };
 		E7E0C93A28A0BB48004607D0 /* AppFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0C93928A0BB48004607D0 /* AppFramework.swift */; };
 		E7E0C93C28A0BE4C004607D0 /* PokemonListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0C93B28A0BE4C004607D0 /* PokemonListAssembly.swift */; };
+		E7E0C95628A11281004607D0 /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E0C95528A11281004607D0 /* PokemonService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E7E0C93728A0BB2F004607D0 /* DependenciesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesConfiguration.swift; sourceTree = "<group>"; };
 		E7E0C93928A0BB48004607D0 /* AppFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFramework.swift; sourceTree = "<group>"; };
 		E7E0C93B28A0BE4C004607D0 /* PokemonListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListAssembly.swift; sourceTree = "<group>"; };
+		E7E0C95528A11281004607D0 /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		E72D807C288C21D8003E8FEE /* pokemon-swiftui */ = {
 			isa = PBXGroup;
 			children = (
+				E7E0C95328A1126B004607D0 /* ServiceLayer */,
 				E7B9A753288FED9E00FAF42F /* ApplicationLayer */,
 				E7B9A7572890051C00FAF42F /* PresentationLayer */,
 				E72D8081288C21D9003E8FEE /* Assets.xcassets */,
@@ -122,6 +125,22 @@
 				E7E0C93928A0BB48004607D0 /* AppFramework.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		E7E0C95328A1126B004607D0 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E7E0C95428A11273004607D0 /* PokemonService */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		E7E0C95428A11273004607D0 /* PokemonService */ = {
+			isa = PBXGroup;
+			children = (
+				E7E0C95528A11281004607D0 /* PokemonService.swift */,
+			);
+			path = PokemonService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B9A75A2890056200FAF42F /* PokemonListView.swift in Sources */,
+				E7E0C95628A11281004607D0 /* PokemonService.swift in Sources */,
 				E7E0C93C28A0BE4C004607D0 /* PokemonListAssembly.swift in Sources */,
 				E7E0C93828A0BB2F004607D0 /* DependenciesConfiguration.swift in Sources */,
 				E7B9A756288FF1B300FAF42F /* AppDelegate.swift in Sources */,

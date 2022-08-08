@@ -9,22 +9,27 @@ import SwiftUI
 
 struct PokemonListView: View {
 
-    private let viewModel: PokemonListViewModel
+    @ObservedObject private var viewModel: PokemonListViewModel
 
     init(viewModel: PokemonListViewModel) {
         self.viewModel = viewModel
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(viewModel.pokemons) { pokemon in
+            Text(pokemon.name)
+        }
+        .onAppear {
+            viewModel.fetchPokemons()
+        }
     }
 }
 
-struct PokemonListView_Previews: PreviewProvider {
-
-    static private let vm = PokemonListViewModel()
-
-    static var previews: some View {
-        PokemonListView(viewModel: vm)
-    }
-}
+//struct PokemonListView_Previews: PreviewProvider {
+//
+//    static private let vm = PokemonListViewModel(pokemonService: PokemonServiceImp())
+//
+//    static var previews: some View {
+//        PokemonListView(viewModel: vm)
+//    }
+//}
